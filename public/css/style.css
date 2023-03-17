@@ -1,0 +1,279 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coiny&family=Dancing+Script:wght@600&family=Kanit:wght@800&family=Londrina+Solid:wght@300&family=Solitreo&family=Ubuntu:wght@700&display=swap');
+
+  body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+
+
+      /* to make footer stick to bottom */
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+
+
+      /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+  }
+
+  html {
+      font-size: 62.5%;
+  }
+
+  .container {
+      margin: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+  }
+
+  .left {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 3rem;
+  }
+
+
+
+  .right {
+      padding: 3rem;
+  }
+
+  .weather_img {
+      display: flex;
+      height: 25rem;
+      width: 25rem;
+      border-radius: 3rem;
+      padding: 1.5rem;
+  }
+
+  .weather_img:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+  }
+
+  h1 {
+      font-size: 4rem;
+      font-family: 'Solitreo', cursive;
+  }
+
+  h3 {
+      font-size: 2rem;
+      display: inline-block;
+      font-family: 'Bebas Neue', cursive;
+  }
+
+  span {
+      color: rgb(89, 148, 167);
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-family: 'Ubuntu', sans-serif;
+  }
+
+
+  button {
+      color: gray;
+      display: flex;
+      text-align: center;
+      border: 0.3rem solid black;
+      border-radius: 10rem;
+      font-family: 'Solitreo', cursive;
+      width: 12rem;
+      padding: 1rem;
+      font-size: 2rem;
+      font-family: 'Ubuntu', sans-serif;
+  }
+
+  button:hover {
+      background-color: lightblue;
+      color: black;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+
+
+  a {
+      text-decoration: none;
+  }
+
+  /* weather page */
+
+  .heading {
+      font-family: 'Solitreo', cursive;
+      text-transform: uppercase;
+      display: flex;
+      margin: 3rem;
+      font-size: 7rem;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  input {
+      background-color: white;
+      color: black;
+      font-weight: 600;
+      border: 0.5rem solid black;
+      padding: 1rem;
+      border-radius: 10rem;
+      font-size: 1.5rem;
+
+  }
+
+
+  .form {
+      gap: 0.5rem;
+  }
+
+
+  .data {
+      background-color: black;
+      color: white;
+      margin: 5rem;
+      font-size: 2rem;
+      border-radius: 10rem;
+      padding: 3rem;
+  }
+
+  .top {
+
+      display: flex;
+      gap: 2rem;
+      font-size: 1.5rem;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+
+  #city_name {
+      font-size: 4.2rem;
+  }
+
+  #temp {
+      font-size: 3rem;
+  }
+
+  #temp_status {
+      font-size: 3rem;
+
+
+  }
+
+
+  .icons {
+      display: flex;
+      gap: 5rem;
+      flex-wrap: wrap;
+
+      color: black;
+      font-size: 5rem;
+  }
+
+  .icon_p {
+      color: black;
+
+  }
+
+  .icon_p:hover {
+      color: blue;
+      box-shadow: rgba(65, 65, 71, 0.2) 0px 7px 29px 0px;
+
+  }
+
+
+
+  /* footer */
+
+  .footer {
+      background-color: black;
+      position: sticky;
+      bottom: 0rem;
+      color: white;
+      /* to make footer stick to bottom */
+      margin-top: auto;
+      /* to make footer stick to bottom */
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: 800;
+      text-transform: capitalize;
+  }
+
+
+  .ul {
+      display: flex;
+  }
+
+
+
+
+
+
+
+  @media (max-width : 320px) {
+      html {
+          font-size: 32%;
+      }
+
+      .container {
+          flex-wrap: wrap;
+
+      }
+
+  }
+
+
+
+  @media (min-width : 320px) and (max-width : 480px) {
+      html {
+          font-size: 41%;
+      }
+
+      .container {
+          flex-wrap: wrap;
+
+      }
+
+  }
+
+  @media (min-width : 481px) and (max-width : 768px) {
+      html {
+          font-size: 52%;
+      }
+
+
+  }
+
+  @media (min-width : 769px) and (max-width : 1023px) {
+      html {
+          font-size: 62.5%;
+      }
+
+
+  }
+
+
+  @media (min-width : 1024px) and (max-width : 1200px) {
+      html {
+          font-size: 71%;
+      }
+
+  }
+
+
+  @media (min-width : 1201px) {
+      html {
+          font-size: 77%;
+      }
+
+  }

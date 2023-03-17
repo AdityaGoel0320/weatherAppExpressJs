@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Static website</title>
+</head>
+
+<body>
+    <!-- nabar -->
+    {{>navbar}}
+
+
+    <!-- main header -->
+
+    <h2 class="heading">weather page</h2>
+    <div class="box">
+        <form action="" class="form">
+            <input type="text" id="cityName" placeholder="Enter City Name" autocomplete="off">
+            <input type="submit" value="search" id="submitBtn">
+        </form>
+
+        <div class="data">
+            <div class="top">
+                <p id="day">Day :-Sunday</p>
+                <p id="today_date">Date:- 12/3/23</p>
+            </div>
+
+            <div class="bottom">
+                <p id="city_name"></p>
+                <div class="top">
+                    <p>
+                        {{!-- as to shoe in deg celsius --}}
+                        <span id="temp"></span>
+                        <sup id="sub">O</sup>
+                        <span id="c">C</span>
+                    </p>
+                    <p id="temp_status">
+                        {{!-- icon come here --}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- footer -->
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
