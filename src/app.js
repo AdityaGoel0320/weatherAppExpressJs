@@ -45,12 +45,12 @@ app.get("/weather", (req, res) => {
 
 })
 
-// app.get("*", (req, res) => {
-//     res.render("404error" , {
-//         errorMsg : "oops page not found"
-//     })
+app.get("*", (req, res) => {
+    res.render("404error" , {
+        errorMsg : "oops page not found"
+    })
 
-// })
+})
 
 app.listen(port, () => {
     console.log(`listening to port number :- ${port}`)
