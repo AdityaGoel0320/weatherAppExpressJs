@@ -1,6 +1,6 @@
 {
   "version": 2,
   "name": "expressWebProjectThapa",
-  "builds": [{ "src": "app.js", "use": "@vercel/node" }],
+  "builds": [{ "src": "src/app.js", "use": "@vercel/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/server.js" }]
 }
